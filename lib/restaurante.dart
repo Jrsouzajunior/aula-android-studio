@@ -1,4 +1,3 @@
-
 import 'package:aula1/Usuario.dart';
 
 class Restaurante {
@@ -8,6 +7,7 @@ class Restaurante {
   String? _longitude;
   Usuario? _proprietario;
   String? _tipo;
+  String? _logopath;
 
   int? get codigo => _codigo;
   String? get nome => _nome;
@@ -15,6 +15,7 @@ class Restaurante {
   String? get longitude => _longitude;
   Usuario? get proprietario => _proprietario;
   String? get tipo => _tipo;
+  String? get logopath => _logopath;
 
   set codigo(int? valor) => _codigo = valor;
   set nome(String? valor) => _nome = valor;
@@ -22,13 +23,22 @@ class Restaurante {
   set longitude(String? valor) => _longitude = valor;
   set proprietario(Usuario? valor) => _proprietario = valor;
   set tipo(String? valor) => _tipo = valor;
+  set logopath(String? valor) => _logopath = valor;
 
-  Restaurante({int? codigo, String? nome, String? latitude, String? longitude, Usuario? proprietario, String? tipo}){
+  Restaurante(
+      {int? codigo,
+      String? nome,
+      String? latitude,
+      String? longitude,
+      Usuario? proprietario,
+      String? tipo,
+      String? logopath}) {
     _codigo = codigo;
     _nome = nome;
     _latitude = latitude;
     _longitude = longitude;
     _proprietario = proprietario;
     _tipo = tipo;
+    _logopath = logopath;
   }
 }
